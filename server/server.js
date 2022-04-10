@@ -33,6 +33,8 @@ app.get('/', function(req,res) {
 });
 
 
+console.log(path.join(__dirname, 'build'))
+
 const PORT = 8000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log('Connected to port ' + PORT)
