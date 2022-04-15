@@ -61,7 +61,7 @@ app.get("/getplaces", async (request, response) => {
   /*Image upload*/
   const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, './build/images/uploads/')
+      cb(null, '/usr/src/app/server/build/images/uploads/')
     },
     filename: (req, file, cb) => {
       cb(null, Date.now() + file.originalname)
