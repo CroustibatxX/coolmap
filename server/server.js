@@ -9,7 +9,7 @@ const app = express();
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB = 'mongodb://mongo:27017/coolmap';
+var mongoDB = 'mongodb://localhost:27017/coolmap';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 
 //Get the default connection
